@@ -1,4 +1,4 @@
-package config;
+package com.kafka.wikimedia.producer_kafka.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

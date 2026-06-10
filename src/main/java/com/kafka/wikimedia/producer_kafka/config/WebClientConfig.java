@@ -1,4 +1,4 @@
-package config;
+package com.kafka.wikimedia.producer_kafka.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
