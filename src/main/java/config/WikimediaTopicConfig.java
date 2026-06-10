@@ -9,7 +9,7 @@ import org.springframework.kafka.config.TopicBuilder;
 public class WikimediaTopicConfig {
 
   @Bean
-  public NewTopic wikimediaTopic() {
+  public NewTopic wikimediaStreamTopic() {
 
     return TopicBuilder
       .name("wikimedia-stream")
