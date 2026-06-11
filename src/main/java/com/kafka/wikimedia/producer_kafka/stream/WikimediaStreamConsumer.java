@@ -15,4 +15,13 @@ public class WikimediaStreamConsumer {
       .baseUrl("https://stream.wikimedia.org/v2")
       .build();
   }
+
+  public void consumeStreamAndPublish() {
+
+    webClient.get()
+      .uri("/stream/recentchange")
+      .retrieve()
+      .bodyToFlux(String.class)
+      .subscribe(log::info);
+  }
 }
