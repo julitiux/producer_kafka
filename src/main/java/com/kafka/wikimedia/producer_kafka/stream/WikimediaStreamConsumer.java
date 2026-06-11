@@ -11,6 +11,8 @@ public class WikimediaStreamConsumer {
   private final WebClient webClient;
 
   public WikimediaStreamConsumer(WebClient.Builder webClientBuilder) {
-    this.webClient = webClientBuilder.baseUrl("https://stream.wikimedia.org/v2").build();
+    this.webClient = webClientBuilder
+      .baseUrl("https://stream.wikimedia.org/v2")
+      .build();
   }
 }
